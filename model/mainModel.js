@@ -1,5 +1,5 @@
 async function Main(){
-    const r = await fetch("src/desc.json")
+    const r = await fetch("MyProfile/src/desc.json")
     const n = await r.json();
     return n;
     
