@@ -117,8 +117,8 @@ export function main(isMobile, isDark) {
         gsap.to(mainimg,{
             background : isDark?"white":"#0C2B4E",
             width : 270,
-            height : 270,
-            bottom : h/2.5,
+            height : "40%",
+            marginTop : "30%",
             marginLeft:0,   
             justifySelf: "center" ,   
             position : "absolute",
@@ -141,8 +141,8 @@ export function main(isMobile, isDark) {
             ease: "power2.out"
         })
         gsap.to(head,{
-            fontSize: 30,
-            marginTop: "290px",
+            fontSize: "150%",
+            marginTop: "80%",
             marginRight: "0px",
             duration: 1,
             ease: "power2.out"
@@ -161,9 +161,9 @@ export function main(isMobile, isDark) {
             ease: "power2.out"
         })
         gsap.to(head,{
-            fontSize: w/25,
+            fontSize: w <= 900? "200%": "250%",
             marginTop: "0px",
-            marginRight: "100px",
+            marginRight: "25%",
             duration: 1,
             ease: "power2.out"
         })
@@ -171,7 +171,7 @@ export function main(isMobile, isDark) {
             background: "none",
             width : 280,
             height : 650,
-            bottom : "0",
+            marginTop : "0",
             marginLeft:w-300,   
             justifySelf: "center" ,   
             position : "absolute",
