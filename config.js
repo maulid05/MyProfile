@@ -16,14 +16,16 @@ protofolio(isMobile, isDark);
 
 
 function ukHandler() {
-    scwidth = window.innerWidth;
-    let scheight = window.innerHeight;
+    scwidth = window.screen.width;
     if (scwidth <= 700) {
         sender(true, null);
+        main(isMobile,isDark);
     }else{
         sender(false, null)
     }
 }
+
+setInterval(ukHandler, 1000);
 
 document.getElementById("dnlbtn").onclick = dnlHandler;
 
