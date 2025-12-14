@@ -92,8 +92,8 @@ setInterval(listshow, 2500);
 
 export function main(isMobile, isDark) {
     new dnlbtnicon(isDark);
-    let w = window.innerWidth;
-    let h = window.innerHeight;
+    let w = window.screen.width;
+    let h = window.screen.height;
     if (isDark) {
         icon.setAttribute("fill", "white" );
         gsap.to(div,{
@@ -116,8 +116,8 @@ export function main(isMobile, isDark) {
     if (isMobile) {
         gsap.to(mainimg,{
             background : isDark?"white":"#0C2B4E",
-            width : 270,
-            height : "40%",
+            width : w/2.5,
+            height : h/2.5,
             marginTop : "30%",
             marginLeft:0,   
             justifySelf: "center" ,   
@@ -171,8 +171,8 @@ export function main(isMobile, isDark) {
             background: "none",
             width : 280,
             height : 650,
-            marginTop : "0",
-            marginLeft:w-300,   
+            marginTop : "0%",
+            marginLeft:w-500,   
             justifySelf: "center" ,   
             position : "absolute",
             objectFit : "cover",

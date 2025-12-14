@@ -8,7 +8,7 @@ const now = new Date();
 let Hours = now.getHours();
 let Minutes = now.getMinutes();
 let Seconds = now.getSeconds();
-let scwidth = window.innerWidth;
+let scwidth = window.screen.width;
 let isMobile = scwidth <= 700, isDark = Hours > 18;
 main(isMobile, isDark);
 event(isMobile,isDark);

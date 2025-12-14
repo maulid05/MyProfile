@@ -14,6 +14,8 @@ tittle.style.justifySelf = "center";
 maindiv.style.justifyContent = "center";
 maindiv.style.alignContent = "center";
 export function protofolio(isMobile, isDark) {
+    //console.log(isMobile);
+    //console.log(window.screen.width);
     
     gsap.to(maindiv,{
         background: isDark ? "#2c2c2cff" :"#018790",
