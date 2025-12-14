@@ -118,7 +118,7 @@ export function main(isMobile, isDark) {
             background : isDark?"white":"#0C2B4E",
             width : 270,
             height : 270,
-            bottom : h/3,
+            bottom : h/2.5,
             marginLeft:0,   
             justifySelf: "center" ,   
             position : "absolute",
