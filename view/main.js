@@ -62,7 +62,7 @@ const icon = document.createElementNS("http://www.w3.org/2000/svg", "path");
     icon.setAttribute("id", "icon");
     icon.setAttribute("d", Mydata[0].logo);
 const mainimg = new Image();
-    mainimg.src = "../src/img.png";
+    mainimg.src = "MyProfile/src/img.png";
 
     
     let i = 0;
